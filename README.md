@@ -145,8 +145,8 @@ O **AtomicRemoteTransfer** é uma aplicação Java desenvolvida para automatizar
 │                    app.config                              │
 ├─────────────────────────────────────────────────────────────┤
 │ app.extension=.ENV                                        │
-│ app.target=C:\MATRIX\ENV\                                │
-│ app.to=\\10.240.0.24\COMPART_PRD\LAB\ENV\               │
+│ app.target=C:\PASTA\ENV\                                │
+│ app.to=\\HOST\PASTA\PASTA\ENV\               │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -160,9 +160,9 @@ O **AtomicRemoteTransfer** é uma aplicação Java desenvolvida para automatizar
 ┌─────────────────────────────────────────────────────────────┐
 │                SFTP Connection Settings                    │
 ├─────────────────────────────────────────────────────────────┤
-│ REMOTE_HOST = "10.240.0.24"                              │
-│ USERNAME = ".\\laboratorio"                               │
-│ PASSWORD = "lab@@2020"                                    │
+│ REMOTE_HOST = "HOST"                              │
+│ USERNAME = ".\\USER"                               │
+│ PASSWORD = "PASSWORD"                                    │
 │ REMOTE_PORT = 22                                          │
 │ SESSION_TIMEOUT = 10000                                   │
 │ CHANNEL_TIMEOUT = 5000                                    │
@@ -257,9 +257,9 @@ ant build
 ┌─────────────────────────────────────────────────────────────┐
 │                    Process Flow                            │
 ├─────────────────────────────────────────────────────────────┤
-│ 1. 📁 Lê arquivos .ENV de C:\MATRIX\ENV\                │
-│ 2. 🔐 Conecta SFTP ao servidor 10.240.0.24              │
-│ 3. 📤 Transfere para \\10.240.0.24\COMPART_PRD\LAB\ENV\ │
+│ 1. 📁 Lê arquivos .ENV de C:\PASTA\ENV\                │
+│ 2. 🔐 Conecta SFTP ao servidor HOST              │
+│ 3. 📤 Transfere para \\HOST\PASTA\PASTA\ENV\ │
 └─────────────────────────────────────────────────────────────┘
 ```
 
